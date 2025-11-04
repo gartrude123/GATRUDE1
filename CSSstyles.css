@@ -1,0 +1,26 @@
+.album {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-origin: left center;
+    transform: rotateY(90deg);
+    animation: openPage 1s forwards;
+    animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes openPage {
+    to {
+        transform: rotateY(0deg);
+    }
+
+}
