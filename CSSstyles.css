@@ -24,3 +24,20 @@
     }
 
 }
+
+ul.sidenav li a {
+    display: block;
+    color: #000000d3;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.sidenav li a.active {
+    background-color: #17c41d;
+    color: rgb(250, 211, 211);
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #7e4545;
+    color: rgb(236, 218, 218);
+}
