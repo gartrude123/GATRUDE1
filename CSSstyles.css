@@ -29,9 +29,9 @@
 .page {
     position: absolute;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid #cf1414;
+    height: 150%;
+    object-fit: fill;
+    border: 4px solid #cf1414;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform-origin: left center;
     transform: rotateY(90deg);
@@ -63,10 +63,20 @@ nav>ul>li>a {
     color: white;
     background-color: green;
     padding: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    gap: 5px;
 }
 
 nav>ul>li>a:hover {
     background-color: yellow;
     color: darkgreen;
 
+}
+
+.footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
