@@ -1,13 +1,38 @@
-.album {
-    position: relative;
-    max-width: 1000px;
-    height: auto;
-    overflow: auto;
-    margin: auto;
-    display: flex;
-    gap: 5px;
-    justify-content: left;
-    align-items: left;
+.album .page {
+    flex: 0 0 100%;
+    animation: slide 9s infinite;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.album .page:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.album .page:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.album .page:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 
 }
 
